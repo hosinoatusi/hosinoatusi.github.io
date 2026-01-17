@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8" />
+    <title>プライバシーポリシー | hosinoatusiのページ</title>
+    <meta name="description" content="hosinoatusiが作っているAndroid用アプリケーションやソフトキーボードを紹介するためのページです。">
+    <meta name="keywords" content="hosinoatusi,hosino,atusi,android,apps,application,apk,アプリ,アンドロイド,アンドロイドアプリ,softkeyboard,ソフトキーボード">
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- アイコンフォントの利用方法 http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: #fff;
+            color: #444;
+            font-size: 16px;
+            font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ＭＳ Ｐゴシック', sans-serif;
+            line-height: 1.42857;
+        }
+
+        a:link {
+            color: #04c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #f00;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #999;
+            text-decoration: none;
+        }
+        /* ヘッダー */
+
+        .header {
+            z-index: 100;
+            padding: 24px 0;
+            width: 100%;
+            border-bottom: #ccd1d9 solid 1px;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: 2.4em;
+        }
+
+        .header-description {
+            color: #999;
+        }
+        /* ナビゲーション */
+
+        .nav {
+            z-index: 100;
+            padding: 12px 0;
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .nav-group {
+            margin: 0;
+            padding: 0;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .nav-group>li {
+            margin: 0;
+            padding: 0 12px;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .nav-group>li a {
+            display: block;
+            padding: 6px 12px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-group>li a:hover {
+            color: #999;
+        }
+
+        .nav-group>li a.active {
+            border-bottom: #333 solid 2px;
+            color: #999;
+        }
+        /* メインイメージ */
+
+        .main {
+            padding: 144px 0;
+            width: 100%;
+            background: #ea5866;
+            background-image: linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        /* コンテンツ */
+
+        .content {
+            padding: 48px 0 24px;
+            *zoom: 1;
+        }
+
+        .article {
+            margin: 0 auto 48px;
+            padding-bottom: 48px;
+            width: 960px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            *zoom: 1;
+        }
+
+        .content:after,
+        .article:after,
+        .article-paragraph:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        .article-title {
+            padding-bottom: 6px;
+            border-bottom: #333 solid 1px;
+        }
+
+        .article-title,
+        .article-paragraph-title {
+            clear: both;
+            margin: 0 0 24px;
+        }
+
+        .article-date {
+            margin: 0 0 6px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .article-paragraph {
+            margin: 0 0 24px;
+            line-height: 1.7;
+            *zoom: 1;
+        }
+
+        .article-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .article-list>li {
+            padding: 12px 0;
+            border-bottom: #ddd dotted 1px;
+        }
+
+        .article-list>li:last-child {
+            border-bottom: none;
+        }
+
+        .article-list-date {
+            padding-right: 12px;
+            color: #999;
+        }
+
+        img.article-img {
+            display: block;
+            margin: 0 0 12px;
+        }
+
+        img.article-img_left {
+            float: left;
+            margin: 0 24px 0 0;
+        }
+
+        img.article-img_right {
+            float: right;
+            margin: 0 0 0 24px;
+        }
+
+        .article-paragraph:last-child,
+        .article-img:last-child {
+            margin: 0;
+        }
+
+        .address {
+            padding: 24px 0 24px 0;
+            border-top: #ccd1d9 solid 1px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .address-body {
+            color: #666;
+            text-align: left;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .address-body-name {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .address-body-addressline {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .address-body-tel {
+            display: block;
+            font-size: 1.1em;
+        }
+
+        a.btn-pagetop {
+            position: fixed;
+            right: 48px;
+            bottom: 36px;
+            width: 72px;
+            height: 72px;
+            border: #ccd1d9 solid 1px;
+            background: #fff;
+            color: #aab2bd;
+            text-align: center;
+            font-size: 3em;
+            vertical-align: baseline;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /* フッター */
+
+        .footer {
+            padding: 12px 0;
+            border-top: #ccd1d9 solid 1px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .footer-nav {
+            margin-bottom: 12px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-nav-group {
+            margin: 0;
+            padding: 0;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .footer-nav-group>li {
+            margin: 0;
+            padding: 0 6px;
+            font-size: 0.9em;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .footer-nav-group>li a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-nav-group>li a:hover {
+            color: #999;
+        }
+
+        .footer-text {
+            margin-bottom: 6px;
+            color: #999;
+            font-size: 0.8em;
+        }
+
+        .footer-copyright {
+            color: #999;
+            font-size: 0.8em;
+        }
+        /* パーツ */
+
+        .img-rounded,
+        .img-circle,
+        .img-thumbnail {
+            margin: 6px;
+        }
+
+        .img-rounded {
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        .img-circle {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .img-thumbnail {
+            padding: 3px;
+            border: #ccd1d9 solid 1px;
+            vertical-align: baseline;
+            line-height: 1;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        .label {
+            margin: 0 12px;
+            padding: 3px 6px;
+            border: #656d78 solid 1px;
+            background: #656d78;
+            color: #fff;
+            vertical-align: baseline;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 0.6em;
+            line-height: 1;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .label_normal {
+            border: #656d78 solid 1px;
+            background: #656d78;
+        }
+    </style>
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVXSNJHE94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EVXSNJHE94');
+</script>
+
+
+</head>
+
+<body id="top">
+    <div class="nav">
+        <ul class="nav-group">
+            <li><a href="/index.html" class="active"><i class="fa fa-home"></i>&nbsp;ホーム</a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=hosinoatusi" target="_blank">
+              Google Playでのhosinoatusiのアプリ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+
+    <div class="header">
+        <h1 class="header-title">hosinoatusiのページ</h1>
+        <p class="header-description">hosinoatusiのページです。</p>
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <h2 class="article-title">プライバシーポリシー</h2>
+            <p class="article-paragraph">
+              hosinoatusiは、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、個人情報保護の重要性の認識と取組みを徹底することにより、個人情報の保護を推進致します。
+            </p><br><br>
+            <h3 class="article-paragraph-title">個人情報の管理</h3>
+            <p class="article-paragraph">
+              hosinoatusiは、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
+            </p><br><br>
+            <h3 class="article-paragraph-title">個人情報の利用目的</h3>
+            <p class="article-paragraph">
+              お客さまからお預かりした個人情報は、各アプリ内でのデータ保存、ランキングのみに利用します。
+            </p><br><br>
+            <h3 class="article-paragraph-title">個人情報の第三者への開示・提供の禁止</h3>
+            <p class="article-paragraph">
+              hosinoatusiは、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。
+            </p>
+                      <ul>
+            <li>お客さまの同意がある場合</li>
+            <li>お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合</li>
+            <li>法令に基づき開示することが必要である場合</li>
+        </ul><br><br>
+            <h3 class="article-paragraph-title">個人情報の安全対策</h3>
+            <p class="article-paragraph">
+              hosinoatusiは、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。
+            </p><br><br>
+            <!--<h3 class="article-paragraph-title">ご本人の照会</h3>
+            <p class="article-paragraph">
+              お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。
+            </p><br><br>-->
+            <h3 class="article-paragraph-title">法令、規範の遵守と見直し</h3>
+            <p class="article-paragraph">
+              hosinoatusiは、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。
+            </p><br><br>
+            <h3 class="article-paragraph-title">お問い合せ</h3>
+            <p class="article-paragraph">
+              hosinoatusiの個人情報の取扱に関するお問い合せは下記までご連絡ください。<br>
+              hosino.atusi@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+    <div class="address">
+        <div class="address-body">
+            <strong class="address-body-name">hosinoatusi</strong>
+            <div class="address-body-addressline">東京都板橋区</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!--<div class="footer-nav">
+            <ul class="footer-nav-group">
+                <li><a href="#"><i class="fa fa-envelope-o"></i>&nbsp;Mail</a></li>
+            </ul>
+        </div>-->
+        <div class="footer-copyright">Copyright &copy; hosinoatusi</div>
+    </div>
+
+    <a href="#top" class="btn-pagetop"><i class="fa fa-arrow-up"></i></a>
+
+
+</body>
+</html>
